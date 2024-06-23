@@ -61,32 +61,32 @@ window.onscroll = () => {
 /****************** scroll reveal ****************/
 // eslint-disable-next-line no-undef
 ScrollReveal({
-  distance: "80px",
-  duration: 2000,
+  distance: "50px",
+  duration: 1300,
   delay: 200,
 });
 
 // eslint-disable-next-line no-undef
-ScrollReveal().reveal(".home-content, heading, .search-content, .controls", {
+ScrollReveal().reveal(".home-content, .heading, .search-content, .controls", {
   origin: "top",
 });
 // eslint-disable-next-line no-undef
 ScrollReveal().reveal(
-  ".home-img,  .portfolio-box, .meditation-img, .container",
+  ".home-img,  .portfolio-box, .meditation-img, .container, .fact-table, .diet-planner-page-container,.diet-planner-page-container-2",
   {
     origin: "bottom",
   }
 );
 // eslint-disable-next-line no-undef
 ScrollReveal().reveal(
-  ".home-content h1, .calories-img, .diet-planner-container, .meditation-container",
+  ".home-content h1, .calories-img, .diet-planner-container, .meditation-container, .sub-heading, list-heading",
   {
     origin: "left",
   }
 );
 // eslint-disable-next-line no-undef
-ScrollReveal().reveal(".home-contact p, .about-content, .contact form", {
-  origin: "top",
+ScrollReveal().reveal(".home-contact p, .about-content, .contact form, .paragraph, .list, .sub-list", {
+  origin: "right",
 });
 
 /******************* typed js *****************/
