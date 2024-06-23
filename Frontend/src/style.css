@@ -22,7 +22,7 @@
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -34,6 +34,11 @@ body {
 section {
   min-height: 100vh;
   padding: 11rem 7% 9rem;
+}
+
+.paragraph {
+  font-size: 1.7rem;
+  margin: 0rem 10rem 0rem 6rem;
 }
 
 .header {
@@ -221,7 +226,7 @@ span {
   color: var(--bg-color);
   letter-spacing: 0.1rem;
   font-weight: 700;
-  transform: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .btn:hover {
@@ -252,6 +257,19 @@ span {
   margin: 4rem 2rem;
 }
 
+.sub-heading {
+  text-align: left;
+  font-size: 2.8rem;
+  margin: 2rem 2rem;
+}
+
+.list-heading {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem -6rem;
+}
+
 .calories-content h2 {
   line-height: 1.2;
   margin: 5rem 5rem;
@@ -259,7 +277,18 @@ span {
 
 .calories-content h3 {
   font-size: 2rem;
-  padding: 1rem 2rem;
+  padding: 1rem;
+}
+
+.list {
+  font-size: 1.6rem;
+  margin: 2rem 12rem;
+}
+
+.sub-list {
+  font-size: 1.5rem;
+  margin: 2rem 4rem;
+  list-style-type:disc;
 }
 
 .search-content {
@@ -293,8 +322,26 @@ span {
   margin: 0 4rem;
 }
 
-.calories btn {
+.calories .btn {
+  display: flex;
+  background-color: var(--main-color);
+  width: 20rem;
+  margin-left: 44%;
   justify-content: center;
+  align-items: center;
+}
+
+.fact-table {
+  width: 75%;
+  font-size: 1.6rem;
+  margin: auto;
+  border: 1px solid #002a5b5c;
+  border-collapse: collapse;
+}
+
+tr, th, td {
+  padding: 1rem;
+  border: 1px solid #002a5b5c;
 }
 
 .diet-planner h2 {
