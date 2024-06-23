@@ -52,7 +52,7 @@ section {
   align-items: center;
   z-index: 100;
   border-radius: 150px;
-  border: 1px solid var(--text-color);
+  border: 1px solid #002a5b6c;
 }
 .header.scroll {
   background: var(--bg-color);
@@ -288,7 +288,7 @@ span {
 .sub-list {
   font-size: 1.5rem;
   margin: 2rem 4rem;
-  list-style-type:disc;
+  list-style-type: disc;
 }
 
 .search-content {
@@ -331,6 +331,45 @@ span {
   align-items: center;
 }
 
+.calories-counter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.calories-counter-box {
+  flex: 1 1 40rem;
+  background-color: #008ba052;
+  padding: 3rem 4rem;
+  margin: 2rem 0 1rem 0;
+  border-radius: 2rem;
+  border: 0.2rem solid var(--bg-color);
+  transition: 0.5s ease;
+}
+
+.calories-counter-box:hover {
+  border-color: var(--snd-bg-color);
+}
+
+.calories-counter-box h2 {
+  font-size: 3rem;
+  color: var(--btn-color);
+}
+
+.calories-counter-box p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 1rem 0 3rem;
+  color: var(--btn-color);
+}
+
+.calories-counter-box .list {
+  font-size: 1.6rem;
+  margin: 2rem;
+}
+
 .fact-table {
   width: 75%;
   font-size: 1.6rem;
@@ -339,7 +378,9 @@ span {
   border-collapse: collapse;
 }
 
-tr, th, td {
+tr,
+th,
+td {
   padding: 1rem;
   border: 1px solid #002a5b5c;
 }
@@ -425,6 +466,92 @@ tr, th, td {
   margin: 1rem 0 3rem;
   font-weight: 700;
   color: #000000;
+}
+
+.diet-planner-page h2 {
+  margin-bottom: 5rem;
+}
+
+.diet-planner-page-container,
+.diet-planner-page-container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.diet-planner-page-box {
+  flex: 1 1 30rem;
+  background-color: #0061d04e;
+  padding: 3rem 4rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid var(--bg-color);
+  transition: 0.5s ease;
+}
+
+.diet-planner-page-box-2 {
+  flex: 1 1 30rem;
+  padding: 5rem 3rem;
+  border-radius: 2rem;
+  text-align: center;
+  border: 0.2rem solid var(--bg-color);
+  transition: 0.5s ease;
+}
+
+.diet-planner-page-box:hover,
+.diet-planner-page-box-2:hover {
+  border-color: var(--snd-bg-color);
+  transform: scale(1.01);
+}
+
+.diet-planner-page-box h3 {
+  font-size: 3.3rem;
+  color: var(--text-color);
+}
+
+.diet-planner-page-box-2 h3 {
+  font-size: 3rem;
+  color: var(--text-color);
+}
+
+.diet-planner-page-box p,
+.diet-planner-page-box-2 p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  margin: 1rem 0 3rem;
+  color: var(--text-color);
+}
+
+.diet-planner-page-box-2 .list {
+  font-size: 1.6rem;
+  margin: 2rem;
+}
+
+main .title {
+  margin: 2rem;
+}
+
+.diet-planner-page main .paragraph {
+  margin: 0rem 2rem 3rem 4rem;
+}
+
+.diet-planner-page .fact-table {
+  width: 97%;
+  font-size: 1.6rem;
+  margin: auto;
+  border: 1px solid #002a5b76;
+  border-collapse: collapse;
+}
+
+.head-row {
+  width: 20%;
+}
+
+.fact-table .list {
+  font-size: 1.6rem;
+  margin: 0rem 1rem 0 4rem;
 }
 
 .meditation h2 {
@@ -519,7 +646,7 @@ tr, th, td {
 }
 
 #text {
-    font-size: 2.2rem;
+  font-size: 2.2rem;
 }
 
 .container.grow {
@@ -529,8 +656,8 @@ tr, th, td {
 @keyframes grow {
   from {
     transform: scale(1);
-}
-to {
+  }
+  to {
     transform: scale(1.2);
   }
 }

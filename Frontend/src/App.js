@@ -1,5 +1,6 @@
 import Main from "./components/Main";
 import Calories from "./components/Calories"
+import Diet from "./components/Diet"
 import "./style.css";
 
 import React, { useEffect } from "react";
@@ -20,6 +21,7 @@ function App() {
     <div className="App">
       <Main />
       <Calories/>
+      <Diet/>
     </div>
   );
 }
