@@ -79,15 +79,18 @@ ScrollReveal().reveal(
 );
 // eslint-disable-next-line no-undef
 ScrollReveal().reveal(
-  ".home-content h1, .calories-img, .diet-planner-container, .meditation-container, .sub-heading, list-heading",
+  ".home-content h1, .calories-img, .diet-planner-container, .meditation-container, .sub-heading, .list-heading, .breathing-page-buttons",
   {
     origin: "left",
   }
 );
 // eslint-disable-next-line no-undef
-ScrollReveal().reveal(".home-contact p, .about-content, .contact form, .paragraph, .list, .sub-list", {
-  origin: "right",
-});
+ScrollReveal().reveal(
+  ".home-contact p, .about-content, .contact form, .paragraph, .list, .sub-list, p",
+  {
+    origin: "right",
+  }
+);
 
 /******************* typed js *****************/
 
@@ -126,3 +129,23 @@ function breathAnimation() {
 }
 
 setInterval(breathAnimation, totaltime);
+
+const container2 = document.getElementById("container-2");
+const text2 = document.getElementById("text-2");
+breathAnimation2();
+
+function breathAnimation2() {
+  text2.innerText = "Breathe In!";
+  container2.className = "container-2 grow";
+
+  setTimeout(() => {
+    text2.innerText = "Hold";
+
+    setTimeout(() => {
+      text2.innerText = "Breathe Out!";
+      container2.className = "container-2 shrink";
+    }, holdTime);
+  }, breathTime);
+}
+
+setInterval(breathAnimation2, totaltime);
