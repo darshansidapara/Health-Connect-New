@@ -4,7 +4,7 @@ const Calories = () => {
     <>
       {/* HEADER DESIGN */}
       <header className="header">
-        <a href="html" className="logo">
+        <a href="#home" className="logo">
           <img className="mainLogo" src="./images/logo1.png" alt="logo" />
           Health Connect
         </a>

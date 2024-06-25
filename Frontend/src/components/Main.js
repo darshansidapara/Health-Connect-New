@@ -6,8 +6,10 @@ const Main = () => {
     <>
       {/* HEADER DESIGN */}
       <header className="header">
-        <a href="html" className="logo">
-          <img className="mainLogo" src="./images/logo1.png" alt="logo" />Health Connect</a>
+        <a href="#home" className="logo">
+          <img className="mainLogo" src="./images/logo1.png" alt="logo" />
+          Health Connect
+        </a>
         <i className="fa-solid fa-bars" id="menu-icon" />
         <nav className="navbar">
           <a href="#home" className="active">
@@ -90,9 +92,11 @@ const Main = () => {
           <div className="calories-img">
             <div className="calories-img-border" />
             <img src="./images/calories-img-2.png" alt="" />
-            {/* <a href="#" class="btn">Read More</a> */}
           </div>
         </div>
+        <a href="calories" class="btn explore">
+          Read More
+        </a>
       </section>
       {/* DIET PLANNER SECTION DESIGN */}
       <section className="diet-planner" id="diet-planner">
@@ -108,7 +112,7 @@ const Main = () => {
             <Link to="/diet">
               <a href="#diet-planner" className="btn">
                 Create My Plan
-              </a>  
+              </a>
             </Link>
           </div>
           <div className="diet-planner-box plan2">
@@ -120,7 +124,7 @@ const Main = () => {
             <Link to="/diet">
               <a href="#diet-planner" className="btn">
                 Create My Plan
-              </a>  
+              </a>
             </Link>
           </div>
           <div className="plan3">
@@ -193,13 +197,15 @@ const Main = () => {
   <button id="energyBoost">Energy Boost</button>
   <button id="soothingSleep">Soothing Sleep</button> */}
           <button id="stopButton">Stop</button>
-          <button className="explore-more" id="explore-more">
-            Explore More
-          </button>
+          <a href="breathing-page">
+            <button className="explore-more" id="explore-more">
+              Explore More
+            </button>
+          </a>
         </div>
         <div className="container" id="container">
           <div className="circle" />
-          <p id="text" ></p>
+          <p id="text"></p>
           <div className="pointer-container">
             <span className="pointer" />
           </div>
