@@ -581,6 +581,7 @@ main .title {
   background-color: #000;
 }
 
+
 .breathing h2 {
   margin-bottom: 2rem;
 }
@@ -645,11 +646,13 @@ main .title {
   }
 }
 
-#text {
+#text,
+#text-2 {
   font-size: 2.2rem;
 }
 
-.container.grow {
+.container.grow,
+.container-2.grow {
   animation: grow 3s linear forwards;
 }
 
@@ -662,7 +665,8 @@ main .title {
   }
 }
 
-.container.shrink {
+.container.shrink,
+.container-2.shrink {
   animation: shrink 3s linear forwards;
 }
 
@@ -678,28 +682,32 @@ main .title {
 .controls {
   margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
 }
 
-.controls button {
+.controls button,
+.controls-2 button {
   padding: 10px 20px;
   background-color: var(--main-color);
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 5px;
+  margin: 0.7rem;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   transition: background-color 0.3s ease;
 }
 
-.controls button:hover {
+.controls button:hover,
+.controls-2 button:hover {
   background-color: var(--btn-color);
 }
 
-.controls .explore-more {
+.controls .explore-more,
+.controls-2 .explore-more {
   background-color: #000;
 }
 
@@ -721,15 +729,13 @@ main .title {
   }
 }
 
-.controls {
-  margin-top: 20px;
-}
-
+/* 
 .controls input {
   margin-right: 10px;
-}
+} */
 
-.controls button {
+.controls button,
+.controls-2 button {
   padding: 1.4rem 2rem;
   background-color: var(--btn-color);
   font-size: 1.7rem;
@@ -740,8 +746,48 @@ main .title {
   transition: background-color 0.3s ease;
 }
 
-.controls button:hover {
+.controls button:hover,
+.controls-2 button:hover {
   background-color: var(--main-color);
+}
+
+.container-2 {
+  display: grid;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  transform: scale(1);
+}
+.controls-2 {
+  margin-top: 20px;
+  display: grid;
+  grid-auto-flow: row;
+  justify-content: center;
+}
+
+.breathing-page-buttons {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-auto-flow: column;
+  margin: 8rem 4rem;
+}
+
+.purpose {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2rem 6rem;
+}
+
+.breathing-page-content .no-border,
+.breathing-page-content .no-border tr,
+.breathing-page-content .no-border th,
+.breathing-page-content .no-border td {
+  border: none;
+  text-align:left;
 }
 
 .footer {
