@@ -1,4 +1,6 @@
-const Main = () => {
+import React from 'react';
+
+const Diet = () => {
   return (
     <>
       {/* HEADER DESIGN */}
@@ -9,11 +11,9 @@ const Main = () => {
         </a>
         <i className="fa-solid fa-bars" id="menu-icon" />
         <nav className="navbar">
-          <a href="#home" className="active">
-            Home
-          </a>
+          <a href="#home">Home</a>
           <a href="#calories-counter">Calories Counter</a>
-          <a href="#diet-planner-page">Diet Planner</a>
+          <a href="#diet-planner-page" className="active">Diet Planner</a>
           <a href="#meditation">Meditation</a>
           <a href="#breathing">Breathing</a>
           <div className="login">
@@ -474,4 +474,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Diet;

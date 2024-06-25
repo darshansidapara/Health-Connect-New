@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 const Main = () => {
   return (
     <>
@@ -73,7 +76,9 @@ const Main = () => {
           <div className="search-content">
             <div className="search-bar">
               <i className="fa-solid fa-magnifying-glass search-icon" />
-              <input placeholder="Find Food Calories" />
+              <Link to="/calories">
+                <input placeholder="Find Food Calories" />
+              </Link>
             </div>
             <h3>
               Find thousands of foods and their respective calorie information.
@@ -100,9 +105,11 @@ const Main = () => {
             <p>
               Loss and maintain your ideal weight with your personalized plan.
             </p>
-            <a href="#diet-planner" className="btn">
-              Create My Plan
-            </a>
+            <Link to="/diet">
+              <a href="#diet-planner" className="btn">
+                Create My Plan
+              </a>  
+            </Link>
           </div>
           <div className="diet-planner-box plan2">
             <h3>Weight Gain Plan</h3>
@@ -110,9 +117,11 @@ const Main = () => {
               Gain and maintain your ideal Body Outline with your personalized
               plan.
             </p>
-            <a href="#diet-planner" className="btn">
-              Create My Plan
-            </a>
+            <Link to="/diet">
+              <a href="#diet-planner" className="btn">
+                Create My Plan
+              </a>  
+            </Link>
           </div>
           <div className="plan3">
             <div className="diet-planner-box">
