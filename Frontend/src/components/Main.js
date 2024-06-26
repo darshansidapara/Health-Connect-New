@@ -78,7 +78,7 @@ const Main = () => {
           <div className="search-content">
             <div className="search-bar">
               <i className="fa-solid fa-magnifying-glass search-icon" />
-              <Link to="/calories">
+              <Link to="/calories-counter-page">
                 <input placeholder="Find Food Calories" />
               </Link>
             </div>
@@ -94,7 +94,7 @@ const Main = () => {
             <img src="./images/calories-img-2.png" alt="" />
           </div>
         </div>
-        <a href="calories" class="btn explore">
+        <a href="calories-counter-page" class="btn explore">
           Read More
         </a>
       </section>
@@ -109,11 +109,9 @@ const Main = () => {
             <p>
               Loss and maintain your ideal weight with your personalized plan.
             </p>
-            <Link to="/diet">
-              <a href="#diet-planner" className="btn">
+              <a href="diet-planner-page" className="btn">
                 Create My Plan
               </a>
-            </Link>
           </div>
           <div className="diet-planner-box plan2">
             <h3>Weight Gain Plan</h3>
@@ -121,11 +119,9 @@ const Main = () => {
               Gain and maintain your ideal Body Outline with your personalized
               plan.
             </p>
-            <Link to="/diet">
-              <a href="#diet-planner" className="btn">
+              <a href="diet-planner-page" className="btn">
                 Create My Plan
               </a>
-            </Link>
           </div>
           <div className="plan3">
             <div className="diet-planner-box">
@@ -166,19 +162,19 @@ const Main = () => {
           alt="meditation"
         />
         <div className="meditation-container">
-          <a href="#meditation" className="btn">
+          <a href="meditation-page" className="btn">
             Mindfulness
           </a>
-          <a href="#meditation" className="btn">
+          <a href="meditation-page" className="btn">
             Guided
           </a>
-          <a href="#meditation" className="btn">
+          <a href="meditation-page" className="btn">
             Focus
           </a>
-          <a href="#meditation" className="btn">
+          <a href="meditation-page" className="btn">
             Visualization
           </a>
-          <a href="#meditation" className="btn explore">
+          <a href="meditation-page" className="btn explore">
             Explore More
           </a>
         </div>
