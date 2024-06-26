@@ -6,6 +6,7 @@ import Calories from "./components/Calories"
 import Diet from "./components/Diet"
 import Breathing from "./components/Breathing";
 import "./style.css";
+import Meditation from "./components/Meditation";
 
 
 function App() {
@@ -25,8 +26,9 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/calories" element={<Calories />} />
-          <Route path="/diet" element={<Diet />} />
+          <Route path="/calories-counter-page" element={<Calories />} />
+          <Route path="/diet-planner-page" element={<Diet />} />
+          <Route path="/meditation-page" element={<Meditation />} />
           <Route path="/breathing-page" element={<Breathing />} />
         </Routes>
       </div>
