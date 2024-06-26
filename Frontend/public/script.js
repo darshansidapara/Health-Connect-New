@@ -130,22 +130,22 @@ function breathAnimation() {
 
 setInterval(breathAnimation, totaltime);
 
-const container2 = document.getElementById("container-2");
-const text2 = document.getElementById("text-2");
-breathAnimation2();
+// const container2 = document.getElementById("container-2");
+// const text2 = document.getElementById("text-2");
+// breathAnimation2();
 
-function breathAnimation2() {
-  text2.innerText = "Breathe In!";
-  container2.className = "container-2 grow";
+// function breathAnimation2() {
+//   text2.innerText = "Breathe In!";
+//   container2.className = "container-2 grow";
 
-  setTimeout(() => {
-    text2.innerText = "Hold";
+//   setTimeout(() => {
+//     text2.innerText = "Hold";
 
-    setTimeout(() => {
-      text2.innerText = "Breathe Out!";
-      container2.className = "container-2 shrink";
-    }, holdTime);
-  }, breathTime);
-}
+//     setTimeout(() => {
+//       text2.innerText = "Breathe Out!";
+//       container2.className = "container-2 shrink";
+//     }, holdTime);
+//   }, breathTime);
+// }
 
-setInterval(breathAnimation2, totaltime);
+// setInterval(breathAnimation2, totaltime);
