@@ -1,28 +1,28 @@
-import React from 'react';
+import React from "react";
 const Calories = () => {
   return (
     <>
       {/* HEADER DESIGN */}
       <header className="header">
-        <a href="#home" className="logo">
+        <a href="home" className="logo">
           <img className="mainLogo" src="./images/logo1.png" alt="logo" />
           Health Connect
         </a>
         <i className="fa-solid fa-bars" id="menu-icon" />
         <nav className="navbar">
-          <a href="#home">Home</a>
-          <a href="#calories-counter" className="active">Calories Counter</a>
-          <a href="#diet-planner">Diet Planner</a>
-          <a href="#meditation">Meditation</a>
-          <a href="#breathing">Breathing</a>
-          <div className="login">
-            <a href="#login" target="_blank">
-              Login
-            </a>
-            <a href="#home" id="dark-mode-toggle">
+          <a href="home">Home</a>
+          <a href="calories-counter-page" className="active">
+            Calories Counter
+          </a>
+          <a href="diet-planner-page">Diet Planner</a>
+          <a href="meditation-page">Meditation</a>
+          <a href="breathing-page">Breathing</a>
+          <a href="#login">Login</a>
+          {/* <div className="login">
+            <a href="#home">
               <i className="fa-solid fa-user" />
             </a>
-          </div>
+          </div> */}
         </nav>
       </header>
 
@@ -187,7 +187,7 @@ const Calories = () => {
                   </li>
                 </ul>
               </div>
-            {/* <a href="#diet-planner-page" class="btn">
+              {/* <a href="#diet-planner-page" class="btn">
                 Read More
                 </a> */}
             </div>
@@ -332,6 +332,18 @@ const Calories = () => {
           </table>
         </main>
       </section>
+
+      {/* FOOTER DESIGN */}
+      <footer className="footer">
+        <div className="footer-text">
+          <p>Copyright © 2024 | All Rights Reserved.</p>
+        </div>
+        <div className="footer-iconTop">
+          <a href="#calories-counter">
+            <i className="fa-solid fa-angle-up" />
+          </a>
+        </div>
+      </footer>
     </>
   );
 };

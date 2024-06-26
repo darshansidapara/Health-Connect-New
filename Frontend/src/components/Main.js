@@ -6,27 +6,27 @@ const Main = () => {
     <>
       {/* HEADER DESIGN */}
       <header className="header">
-        <a href="#home" className="logo">
+        <a href="home" className="logo">
           <img className="mainLogo" src="./images/logo1.png" alt="logo" />
           Health Connect
         </a>
         <i className="fa-solid fa-bars" id="menu-icon" />
         <nav className="navbar">
-          <a href="#home" className="active">
+          <a href="home" className="active">
             Home
           </a>
           <a href="#calories">Calories Counter</a>
           <a href="#diet-planner">Diet Planner</a>
           <a href="#meditation">Meditation</a>
           <a href="#breathing">Breathing</a>
-          <div className="login">
-            <a href="#login" target="_blank">
-              Login
-            </a>
+          <a href="#login">
+            Login
+          </a>
+          {/* <div className="login">
             <a href="#home" id="dark-mode-toggle">
               <i className="fa-solid fa-user" />
             </a>
-          </div>
+          </div> */}
         </nav>
       </header>
       {/* HOME SECTION DESIGN */}
@@ -46,20 +46,20 @@ const Main = () => {
             Breathing.
           </p>
           <div className="products">
-            <a href="#home">
+            <a href="#calories">
               <i className="fa-solid fa-calculator" />
             </a>
-            <a href="#home">
+            <a href="#diet-planner">
               <i className="fa-solid fa-clipboard-list" />
             </a>
-            <a href="#home">
+            <a href="#meditation">
               <i className="fa-solid fa-lungs" />
             </a>
-            <a href="#home">
+            <a href="#breathing">
               <i className="fa-solid fa-heart-pulse" />
             </a>
           </div>
-          <a href="#home" className="btn">
+          <a href="#calories" className="btn">
             Explore More
           </a>
         </div>
@@ -95,7 +95,7 @@ const Main = () => {
           </div>
         </div>
         <a href="calories-counter-page" class="btn explore">
-          Read More
+          Explore More
         </a>
       </section>
       {/* DIET PLANNER SECTION DESIGN */}
@@ -109,9 +109,9 @@ const Main = () => {
             <p>
               Loss and maintain your ideal weight with your personalized plan.
             </p>
-              <a href="diet-planner-page" className="btn">
-                Create My Plan
-              </a>
+            <a href="diet-planner-page" className="btn">
+              Create My Plan
+            </a>
           </div>
           <div className="diet-planner-box plan2">
             <h3>Weight Gain Plan</h3>
@@ -119,9 +119,9 @@ const Main = () => {
               Gain and maintain your ideal Body Outline with your personalized
               plan.
             </p>
-              <a href="diet-planner-page" className="btn">
-                Create My Plan
-              </a>
+            <a href="diet-planner-page" className="btn">
+              Create My Plan
+            </a>
           </div>
           <div className="plan3">
             <div className="diet-planner-box">
@@ -192,7 +192,7 @@ const Main = () => {
   <button id="stressRelief">Stress Relief</button>
   <button id="energyBoost">Energy Boost</button>
   <button id="soothingSleep">Soothing Sleep</button> */}
-          <button id="stopButton">Stop</button>
+          {/* <button id="stopButton">Stop</button> */}
           <a href="breathing-page">
             <button className="explore-more" id="explore-more">
               Explore More

@@ -1,30 +1,29 @@
 import React from "react";
+// import { Link } from "react-router-dom";
 const Breathing = () => {
   return (
     <>
       {/* HEADER DESIGN */}
       <header className="header">
-        <a href="#home" className="logo">
+        <a href="home" className="logo">
           <img className="mainLogo" src="./images/logo1.png" alt="logo" />
           Health Connect
         </a>
         <i className="fa-solid fa-bars" id="menu-icon" />
         <nav className="navbar">
-          <a href="#home" className="active">
-            Home
+          <a href="home">Home</a>
+          <a href="calories-counter-page">Calories Counter</a>
+          <a href="diet-planner-page">Diet Planner</a>
+          <a href="meditation-page">Meditation</a>
+          <a href="breathing-page" className="active">
+            Breathing
           </a>
-          <a href="#calories-counter-page">Calories Counter</a>
-          <a href="#diet-planner-page">Diet Planner</a>
-          <a href="#meditation">Meditation</a>
-          <a href="#breathing-page">Breathing</a>
-          <div className="login">
-            <a href="#login" target="_blank">
-              Login
-            </a>
+          <a href="#login">Login</a>
+          {/* <div className="login">
             <a href="#home" id="dark-mode-toggle">
               <i className="fa-solid fa-user" />
             </a>
-          </div>
+          </div> */}
         </nav>
       </header>
 
@@ -52,7 +51,7 @@ const Breathing = () => {
               <button id="deepBreath">Deep Breath</button>
               <button id="rejuvenatingBreath">Rejuvenating Breath</button>
             </div>
-            <div className="container-2" id="container-2">
+            <div className="container" id="container">
               <div className="circle" />
               <p id="text-2"></p>
               <div className="pointer-container">
@@ -409,158 +408,6 @@ const Breathing = () => {
             </tr>
           </table>
 
-          {/* <h2 className="sub-heading">Fats</h2>
-          <p className="paragraph">
-            Fats are a concentrated source of energy and are vital for various
-            bodily functions. They are divided into saturated, unsaturated, and
-            trans fats.
-          </p>
-          <ul className="list">
-            <li>
-              <strong>Daily Requirement:</strong> 20-35% of total calories
-            </li>
-            <li>
-              <strong>Sources: </strong> Oils, butter, avocados, nuts, seeds,
-              and fatty fish
-            </li>
-            <li>
-              <strong>Benefits:</strong> Supports cell growth, protects organs,
-              and aids in nutrient absorption
-            </li>
-
-            <h2 className="list-heading">Saturated Fats</h2>
-            <p>
-              Saturated fats are typically solid at room temperature. High
-              intake of these fats can increase the risk of heart disease.
-            </p>
-            <ul className="sub-list">
-              <li>
-                <strong>Sources:</strong> Meat, butter, cheese, and coconut oil
-              </li>
-              <li>
-                <strong>Recommendation:</strong> Limit to less than 10% of daily
-                calories
-              </li>
-            </ul>
-
-            <h2 className="list-heading">Unsaturated Fats</h2>
-            <p>
-              Unsaturated fats are usually liquid at room temperature and are
-              considered heart-healthy.
-            </p>
-            <ul className="sub-list">
-              <li>
-                <strong>Sources:</strong> Olive oil, avocado, nuts, and fish
-              </li>
-              <li>
-                <strong>Benefits:</strong> Reduces the risk of heart disease and
-                inflammation
-              </li>
-            </ul>
-            <h2 className="list-heading">Trans Fats</h2>
-            <p>
-              Trans fats are artificially produced and are harmful to health.
-            </p>
-            <ul className="sub-list">
-              <li>
-                <strong>Sources:</strong> Processed foods, margarine, and fried
-                foods
-              </li>
-              <li>
-                <strong>Recommendation:</strong> Avoid as much as possible
-              </li>
-            </ul> */}
-          {/* <a href="#diet-planner-page" class="btn">
-                Read More
-                </a> */}
-          {/* </ul> */}
-          {/* 
-          <h2 className="sub-heading">Important Nutrients and Concepts</h2>
-          <ul className="list">
-            <h2 className="list-heading">Vitamins and Minerals</h2>
-            <p>
-              Vitamins and minerals are essential for various bodily functions,
-              including immunity, bone health, and wound healing.
-            </p>
-            <ul className="sub-list">
-              <li>
-                <strong>Vitamins:</strong> A, C, D, E, K, and B-complex
-              </li>
-              <li>
-                <strong>Minerals: </strong> Calcium, potassium, iron, magnesium,
-                and zinc
-              </li>
-            </ul>
-
-            <h2 className="list-heading">Dietary Fiber</h2>
-            <p>
-              Dietary fiber is crucial for digestive health. It helps prevent
-              constipation, lowers cholesterol levels, and controls blood sugar
-              levels.
-            </p>
-            <ul className="sub-list">
-              <li>
-                <strong>Sources:</strong> Whole grains, fruits, vegetables, and
-                legumes
-              </li>
-              <li>
-                <strong>Daily Requirement: </strong> 25-30 grams
-              </li>
-            </ul>
-          </ul>
-
-          <h2 className="sub-heading">Tips for a Balanced Diet</h2>
-          <ol className="list">
-            <li>
-              <strong>Variety:</strong> Include a wide range of foods to ensure
-              you get all necessary nutrients.
-            </li>
-            <li>
-              <strong>Portion:</strong> Be mindful of portion sizes to avoid
-              overeating.
-            </li>
-            <li>
-              <strong>Hydration:</strong> Drink plenty of water throughout the
-              day.
-            </li>
-            <li>
-              <strong>Limit Processed Foods: </strong> Minimize intake of foods
-              high in sugar, salt, and unhealthy fats.
-            </li>
-            <li>
-              <strong>Regular Meals:</strong> Have regular meals and snacks to
-              maintain energy levels.
-            </li>
-          </ol>
-
-          <h2 className="sub-heading">Quick Points</h2>
-          <ol className="list">
-            <li>
-              <strong>Calories:</strong> Measure of energy from food; average
-              needs vary by age, gender, and activity level.
-            </li>
-            <li>
-              <strong>Proteins:</strong> Essential for tissue repair and growth;
-              found in meat, dairy, legumes.
-            </li>
-            <li>
-              <strong>Carbohydrates:</strong>Primary energy source; found in
-              fruits, vegetables, grains.
-            </li>
-            <li>
-              <strong>Fats: </strong> Needed for energy and cell function; focus
-              on unsaturated fats, limit saturated and trans fats.
-            </li>
-            <li>
-              <strong>Vitamins and Minerals:</strong> Crucial for overall
-              health; found in a variety of foods.
-            </li>
-            <li>
-              <strong>Dietary Fiber:</strong> Important for digestive health;
-              found in whole grains, fruits, and vegetables.
-            </li>
-          </ol> */}
-
           <h2 className="sub-heading">
             Additional Suggested Breathing Exercises
           </h2>
@@ -586,11 +433,25 @@ const Breathing = () => {
                 Benefits: Balances the mind, reduces stress, improves
                 respiratory function
               </td>
-              <td>Benefits: Induces relaxation, reduces anxiety, aids in sleep</td>
+              <td>
+                Benefits: Induces relaxation, reduces anxiety, aids in sleep
+              </td>
             </tr>
           </table>
         </main>
       </section>
+
+      {/* FOOTER DESIGN */}
+      <footer className="footer">
+        <div className="footer-text">
+          <p>Copyright © 2024 | All Rights Reserved.</p>
+        </div>
+        <div className="footer-iconTop">
+          <a href="#breathing-page">
+            <i className="fa-solid fa-angle-up" />
+          </a>
+        </div>
+      </footer>
     </>
   );
 };
