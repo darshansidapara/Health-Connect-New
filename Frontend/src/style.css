@@ -68,14 +68,14 @@ section {
 }
 
 .logo {
-  font-size: 3.5rem;
+  font-size: 2.8rem;
   color: var(--text-color);
   font-weight: 700;
   display: flex;
   cursor: pointer;
 }
 .mainLogo {
-  width: 4.7rem;
+  width: 3.7rem;
   color: var(--text-color);
   font-weight: 700;
   cursor: pointer;
@@ -398,7 +398,7 @@ td {
 .diet-planner-container .diet-planner-box {
   flex: 1 1 40rem;
   position: relative;
-  padding: 10rem 3rem;
+  padding: 4rem 3rem;
   border-radius: 2rem;
   transition: 0.5s ease;
 }
@@ -448,8 +448,8 @@ td {
   color: #000;
   border: 1px solid var(--main-color);
   text-align: center;
-  justify-content: space-between;
-  gap: 20rem;
+  /* justify-content: space-between; */
+  gap: 12rem;
   margin-top: 1rem;
   position: relative;
   padding: 2rem 9rem;
@@ -459,7 +459,8 @@ td {
 .diet-planner-img img {
   width: 18vw;
   border-radius: 2.5rem;
-  margin-right: 5rem;
+  justify-content: center;
+  /* margin-right: 5rem; */
 }
 
 .diet-planner-box p {
@@ -579,7 +580,7 @@ main .title {
 }
 
 .meditation-page .no-border {
-  width: 90%;
+  width: 85%;
 }
 
 .meditation-page .no-border,
@@ -589,6 +590,10 @@ main .title {
   border: none;
   text-align:left;
   margin: 4rem auto;
+}
+
+.meditation-page .no-border td {
+  width: 33.33%;
 }
 
 .explore {
@@ -766,27 +771,26 @@ main .title {
 }
 
 .container-2 {
-  display: grid;
+  display: flex;
   align-items: center;
   margin: auto;
   justify-content: center;
   height: 300px;
   width: 300px;
   position: relative;
-  transform: scale(1);
 }
 .controls-2 {
   margin-top: 20px;
   display: grid;
   grid-auto-flow: row;
   justify-content: center;
+  margin: 10rem 4rem;
 }
 
 .breathing-page-buttons {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-auto-flow: column;
-  margin: 8rem 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .purpose {
